@@ -1,72 +1,4 @@
-/* Общие стили
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f8f8f8;
-  margin: 0;
-  padding: 0;
-}
 
-.todo-container {
-  max-width: 450px;
-  margin: 20px auto;
-  background-color: rgba(164, 163, 163, 0.297);
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.input-container {
-  margin-bottom: 20px;
-  margin-left: 20px;
-}
-
-input[type="text"] {
-  display: relative;
-  width: 40px;
-  padding: 15px;
-  margin-right: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  outline: none;
-  align-items: right;
-  justify-content: center;
-
-}
-input [id="clientName"] {
-  background-color: #2714d2;
-  
-}
-
-button {
-  padding: 10px 15px;
-  background-color: #4caf50;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.options {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
-#addButton {
-  margin-left: 14px;
-  width: 93%;
-  padding: 15px;
-  display: inline;
-  align-items: center;
-  justify-content: center;
-  background-color: #2714d2;
-  margin-top: 10px; 
-}
-/* ... (ваш остальной CSS код) */
 
 .custom-checkbox {
   display: none;
@@ -104,9 +36,7 @@ ul {
   display: block;
 }
 
-/* ... (ваш остальной CSS код) */
 
-/* Стили для flex-container */
 .flex-container {
   display: flex;
   justify-content: space-around;
@@ -122,8 +52,8 @@ ul {
 .buis-pers {
   
       display: flex;
-      flex-direction: row; /* Горизонтальное расположение детей */
-      justify-content: space-between; /* Равномерное распределение по ширине */
+      flex-direction: row; 
+      justify-content: space-between; 
       align-items: center;
   
 
@@ -157,36 +87,10 @@ ul {
 }
 
 .custom-checkbox {
-  margin: 0px; /* Убираем внешний отступ у чекбокса */
+  margin: 0px; 
   display: none;
 }
-/* #buisnessCheckbox:checked + .checkbox-container {
-  background-color: blue;
-}
-#buisnessCheckbox:checked + .checkbox-container:before {
 
-  display: block;
-  text-align: center;
-  line-height: 20px;
-
-  color: #fff;
-
-}
-#personalChekbox:checked + .checkbox-container {
-
-  border:rgb(239, 25, 25);
-}
-.custom-checkbox:checked + .checkbox-container {
-  background-color: red; /* Заливаем фон при отметке 
-}
-.forName {
-  display: flex;
-  flex-direction: row;
-}
-.completed {
-  text-decoration: line-through;
-} */
-/* Общие стили */
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f8f8f8;
