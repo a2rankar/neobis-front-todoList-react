@@ -1,4 +1,72 @@
+/* Общие стили
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
 
+.todo-container {
+  max-width: 450px;
+  margin: 20px auto;
+  background-color: rgba(164, 163, 163, 0.297);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-container {
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+input[type="text"] {
+  display: relative;
+  width: 40px;
+  padding: 15px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  align-items: right;
+  justify-content: center;
+
+}
+input [id="clientName"] {
+  background-color: #2714d2;
+  
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+#addButton {
+  margin-left: 14px;
+  width: 93%;
+  padding: 15px;
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  background-color: #2714d2;
+  margin-top: 10px; 
+}
+/* ... (ваш остальной CSS код) */
 
 .custom-checkbox {
   display: none;
@@ -9,7 +77,7 @@
   display: inline-block; 
   width: 20px;
   height: 20px;
-  background-color: rgba(255, 255, 255, 0.998);
+  background-color: rgba(220, 220, 220, 0.998);
   border: 2px solid #000;
   border-radius: 50%;
   display: inline-block;
@@ -36,7 +104,9 @@
   display: block;
 }
 
+/* ... (ваш остальной CSS код) */
 
+/* Стили для flex-container */
 .flex-container {
   display: flex;
   justify-content: space-around;
@@ -52,9 +122,10 @@
 .buis-pers {
   
       display: flex;
-      flex-direction: row; 
-      justify-content: space-between; 
+      flex-direction: row; /* Горизонтальное расположение детей */
+      justify-content: space-between; /* Равномерное распределение по ширине */
       align-items: center;
+      padding: 10px;
   
 
 }
@@ -87,24 +158,51 @@
 }
 
 .custom-checkbox {
-  margin: 0px; 
+  margin: 0px; /* Убираем внешний отступ у чекбокса */
   display: none;
 }
+/* #buisnessCheckbox:checked + .checkbox-container {
+  background-color: blue;
+}
+#buisnessCheckbox:checked + .checkbox-container:before {
 
+  display: block;
+  text-align: center;
+  line-height: 20px;
+
+  color: #fff;
+
+}
+#personalChekbox:checked + .checkbox-container {
+
+  border:rgb(239, 25, 25);
+}
+.custom-checkbox:checked + .checkbox-container {
+  background-color: red; /* Заливаем фон при отметке 
+}
+.forName {
+  display: flex;
+  flex-direction: row;
+}
+.completed {
+  text-decoration: line-through;
+} */
+/* Общие стили */
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f8f8f8;
+  background-color: #eaeaea;
   margin: 0;
   padding: 0;
 }
 
 .todo-container {
+  
   max-width: 450px;
   margin: 20px auto;
   background-color: rgba(164, 163, 163, 0.297);
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
 }
 
 .input-container {
@@ -123,16 +221,20 @@ input[type="text"] {
   align-items: right;
   justify-content: center;
 }
-
 input#clientName {
-  background-color: #2714d2;
-  color: #fff;
-  padding: 15px;
-  border: 1px solid #ddd;
+  background-color: rgba(164, 163, 163, 0.297);
+  box-shadow: 0 0 30px  rgba(164, 163, 163, 0.297);
+  padding: 10px;
+  font-size: 22px;
+  font-family: 'Arial', sans-serif;
+  width: 62%;
+  border: 0px solid #ddd;
   border-radius: 4px;
   outline: none;
 }
-
+input#taskInput {
+  width: 89%
+}
 button {
   padding: 10px 15px;
   background-color: #4caf50;
@@ -150,12 +252,13 @@ ul {
 .options {
   display: flex;
   justify-content: space-between;
+  padding: 10px;
   margin-bottom: 10px;
 }
 
 #addButton {
   margin-left: 14px;
-  width: 93%;
+  width: 94%;
   padding: 15px;
   display: inline;
   align-items: center;
@@ -197,7 +300,9 @@ ul {
 .custom-checkbox:checked + .checkbox-container::after {
   display: block;
 }
-
+.task-actions {
+  margin: 20px;
+}
 /* Стили для flex-container */
 .flex-container {
   display: flex;
@@ -210,6 +315,7 @@ ul {
   color: #fff;
   padding: 10px;
   border-radius: 4px;
+padding: 20px;
 }
 
 .buis-pers {
@@ -243,4 +349,15 @@ ul {
 
 .completed {
   text-decoration: line-through;
+}
+h5 {
+  margin-top: -90px;
+
+}
+#third {
+  
+  width: 200px;
+}
+#second {
+  width: 200px;
 }
